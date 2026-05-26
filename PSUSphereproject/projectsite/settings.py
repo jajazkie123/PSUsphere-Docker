@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-o=5js@4ny$bf&tbcu!ozcg8ecipm@%p13mo^v&)ttb*h-=5+hs
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mikopatindol1.pythonanywhere.com','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['mikopatindol1.pythonanywhere.com','127.0.0.1','localhost', '0.0.0.0']
 
 
 # Application definition
