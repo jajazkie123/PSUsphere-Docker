@@ -1,25 +1,25 @@
-### **Project name**
----
-PSUSphere
+# PSUSphere Docker Setup
 
-### **Description**
----
-<div style="text-align: justify;">
-PSUSphere is a Django-based web application designed to manage and track student organizations, memberships, and academic programs within the university. It provides a centralized database for administrators to oversee the relationship between colleges, students, and their respective organizations.
-</div>
+## For developers (build from source)
 
-### **Features**
----
-- Structured management of Colleges, Programs, Students, and Oraganizations.
-- Refactored Django Admin with search, filter, and display capabilities for efficient record-keeping.
-- Integrated Faker library support to generate large volumes of initial test data for organizations and students.
-- Capability to record and view student affiliations with specific campus organizations.
-- Fully tracked with Git and GitHub with a managed .gitignore to protect sensitive environment files..
+```bash
+git clone https://github.com/jazchiel/psusphere-docker.git
+cd psusphere-docker
+docker-compose up --build
+```
 
->### **Authors**
->
->👤 **Miko R. Patindol**  
-> *Lead Developer*  
->
->👥 **Jazchiel Angelou C. Gomez**  
-> *Project Collaborator*
+## For clients (pull from Docker Hub)
+
+```bash
+# 1. Copy the /for_client/docker-compose.yml to a new folder
+
+# 2. Inside that folder, run:
+docker-compose up -d
+
+# 3. Create superuser (first time only)
+docker-compose exec web python manage.py createsuperuser
+```
+
+## Access the app
+
+Open your browser at: http://localhost:8000
